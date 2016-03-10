@@ -22,7 +22,7 @@
   <version>0.1.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Simple Package Ingest</name>
-  <url>http://dataconservancy.github.io/package-ingest</url>
+  <url>http://dataconservancy.github.io/package-ingest/</url>
   <description>
     The Data Conservancy Simple Package Ingest accepts packages that conform to version 1 of the  Data Conservancy
     Packaging Specification and imports their content into a Fedora repository.
@@ -289,7 +289,7 @@
 
   <!-- Distribution Management ==================================== -->
 
-<!--  <distributionManagement>
+  <distributionManagement>
 
     <site>
       <id>github</id>
@@ -297,6 +297,6 @@
       <url>${project.url}</url>
     </site>
 
-  </distributionManagement>-->
+  </distributionManagement>
 
 </project>

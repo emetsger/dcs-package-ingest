@@ -53,12 +53,12 @@
     </links>
 
     <menu name="Data Conservancy Simple Package Ingest">
-      <item name="Home" href="/"/>
+      <item name="Home" href="/index.html"/>
       <item name="Docker Image" href="http://github.com/DataConservancy/dcs-images"/>
     </menu>
 
     <menu name="Documentation">
-      <item name="Karaf Installation" href="/package-ingest-karaf/index.html"/>
+      <item name="Karaf Installation" href="/package-ingest-karaf/package-ingest-karaf/index.html"/>
       <item name="Packaging Specifications" href="http://dataconservancy.github.io/dc-packaging-spec/"/>
       <item name="Javadocs" href="/apidocs/index.html"/>
     </menu>
