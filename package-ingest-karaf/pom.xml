@@ -55,6 +55,15 @@
     </plugins>
   </build>
 
+  <!-- SCM ======================================================= -->
+
+  <scm>
+    <connection>scm:git:https://github.com/DataConservancy/package-ingest.git</connection>
+    <developerConnection>scm:git:https://github.com/DataConservancy/package-ingest.git</developerConnection>
+    <url>https://github.com/DataConservancy/package-ingest</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <dependencies>
 
     <!-- These 'provided' are here to exclude them as explicit dependencies. 
