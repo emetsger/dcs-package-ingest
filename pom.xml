@@ -90,14 +90,9 @@
           <version>0.12</version>
           <configuration>
             <message>Publishing site for ${project.name} version ${project.version} to ${project.url}</message>
+            <repositoryName>dcs-package-ingest</repositoryName>
+            <repositoryOwner>emetsger</repositoryOwner>
           </configuration>
-          <executions>
-            <execution>
-              <id>gh-site</id>
-              <goals/>
-              <phase/>
-            </execution>
-          </executions>
         </plugin>
 
       </plugins>
@@ -294,7 +289,7 @@
 
   <!-- Distribution Management ==================================== -->
 
-  <distributionManagement>
+<!--  <distributionManagement>
 
     <site>
       <id>github</id>
@@ -302,6 +297,6 @@
       <url>${project.url}</url>
     </site>
 
-  </distributionManagement>
+  </distributionManagement>-->
 
 </project>
