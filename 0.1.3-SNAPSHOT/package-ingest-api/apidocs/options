@@ -1,0 +1,25 @@
+-classpath
+'/Users/esm/workspaces/dc-workspace/dcs-package-ingest/package-ingest-api/target/classes'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'/Users/esm/workspaces/dc-workspace/dcs-package-ingest/package-ingest-api/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2010&#x2013;2016 <a href="http://dataconservancy.org">Data Conservancy</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/esm/workspaces/dc-workspace/dcs-package-ingest/package-ingest-api/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'package-ingest-api 0.1.3-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' '/Users/esm/workspaces/dc-workspace/dcs-package-ingest/package-ingest-api/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'package-ingest-api 0.1.3-SNAPSHOT API'
