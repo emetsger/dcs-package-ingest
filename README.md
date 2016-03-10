@@ -1,1 +1,1 @@
-src/site/md/index.md
+src/site/markdown/index.md

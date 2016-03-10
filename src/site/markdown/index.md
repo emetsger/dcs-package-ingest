@@ -14,9 +14,10 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-# Simple Data Conservancy Package Ingest Service #
+# Data Conservancy Simple Package Ingest Service #
 
-This is a description of the package ingest service
+The Data Conservancy Simple Package Ingest accepts packages that conform to version 1 of the  Data Conservancy
+Packaging Specification, version 1, and imports their content into a Fedora repository.
 
 ## Usage ##
 ### Prerequisites ###
