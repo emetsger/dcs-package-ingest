@@ -1,0 +1,86 @@
+<!--
+  ~ Copyright 2016 Johns Hopkins University
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<project xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd"
+         name="Package Ingest" xmlns="http://maven.apache.org/DECORATION/1.7.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <bannerLeft>
+    <name>Data Conservancy Simple Package Ingest</name>
+    <src>/images/dc-logo.gif</src>
+    <alt>Data Conservancy Home Page</alt>
+    <href>http://dataconservancy.org</href>
+    <title>Data Conservancy Logo</title>
+  </bannerLeft>
+
+  <publishDate/>
+
+  <version/>
+
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.5</version>
+  </skin>
+
+  <body>
+
+    <head>
+      <![CDATA[
+        <link rel="icon" type="image/png" href="/images/dc-favico.png"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="${project.name}"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="${project.url}"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/images/dc-logo.gif"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:image:type" content="image/gif"/>
+      ]]>
+    </head>
+
+    <links>
+      <item name="Home" href="./"/>
+    </links>
+
+    <menu name="Data Conservancy Simple Package Ingest">
+      <item name="Home" href="/"/>
+      <item name="Docker Image" href="http://github.com/DataConservancy/dcs-images"/>
+    </menu>
+
+    <menu name="Documentation">
+      <item name="Karaf Installation" href="/package-ingest-karaf/index.html"/>
+      <item name="Packaging Specifications" href="http://dataconservancy.github.io/dc-packaging-spec/"/>
+      <item name="Javadocs" href="/apidocs/index.html"/>
+    </menu>
+
+    <menu name="Releases">
+      <item name="Simple Package Ingest 0.1.2"
+            href="http://github.com/DataConservancy/dcs-package-ingest/releases/tag/dcs-package-ingest-0.1.2"/>
+      <item name="Simple Package Ingest 0.1.1"
+            href="http://github.com/DataConservancy/dcs-package-ingest/releases/tag/dcs-package-ingest-0.1.1"/>
+    </menu>
+
+    <menu ref="modules"/>
+
+    <menu ref="reports"/>
+
+  </body>
+
+  <custom>
+    <fluidoSkin>
+      <leftColumnClass>span3</leftColumnClass>
+      <bodyColumnClass>span9</bodyColumnClass>
+    </fluidoSkin>
+  </custom>
+
+</project>
