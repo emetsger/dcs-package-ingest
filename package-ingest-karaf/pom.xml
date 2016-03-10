@@ -25,6 +25,7 @@
 
   <properties>
     <hawtio.version>1.4.59</hawtio.version>
+    <github.site.path>${project.version}/${project.artifactId}</github.site.path>
   </properties>
 
   <build>

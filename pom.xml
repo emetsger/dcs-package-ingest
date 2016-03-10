@@ -57,7 +57,12 @@
     <camel.version>${dcs.project.camel.version}</camel.version>
     <karaf.version>${dcs.project.karaf.version}</karaf.version>
     <jena.version>${dcs.project.jena.version}</jena.version>
+
+    <!--
+      GitHub site-maven-plugin properties
+    -->
     <github.global.server>github</github.global.server>
+    <github.site.path>${project.version}</github.site.path>
   </properties>
 
   <!-- Build ====================================================== -->
@@ -90,6 +95,8 @@
           <version>0.12</version>
           <configuration>
             <message>Publishing site for ${project.name} version ${project.version} to ${project.url}</message>
+            <path>${github.site.path}</path>
+            <merge>true</merge>
             <repositoryName>dcs-package-ingest</repositoryName>
             <repositoryOwner>emetsger</repositoryOwner>
           </configuration>

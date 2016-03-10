@@ -22,6 +22,13 @@
   </parent>
   <artifactId>package-ingest-api</artifactId>
   <packaging>bundle</packaging>
+
+  <!-- Properties ================================================= -->
+
+  <properties>
+    <github.site.path>${project.version}/${project.artifactId}</github.site.path>
+  </properties>
+
   <build>
     <plugins>
       <plugin>

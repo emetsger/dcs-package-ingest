@@ -37,6 +37,8 @@
     <package.deposit.dir>${project.build.directory}/package/deposit</package.deposit.dir>
     <package.fail.dir>${project.build.directory}/package/fail</package.fail.dir>
     <fedora.baseuri>http://localhost:${fedora.port}/${fedora.cxtPath}/rest</fedora.baseuri>
+
+    <github.site.path>${project.version}/${project.artifactId}</github.site.path>
   </properties>
 
   <!-- Build ====================================================== -->
