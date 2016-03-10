@@ -1,0 +1,3 @@
+org.dataconservancy.packaging.ingest.camel
+org.dataconservancy.packaging.ingest.camel.impl
+org.dataconservancy.packaging.ingest.camel.impl.config
