@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20160310" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>package-ingest-impl &#x2013; Project Dependencies</title>
+    <title>package-ingest-osgi &#x2013; Project Dependencies</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.5.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -18,8 +18,8 @@
     <script type="text/javascript" src="./js/apache-maven-fluido-1.5.min.js"></script>
 
           <link rel="icon" type="image/png" href="/images/dc-favico.png"/>
-        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="package-ingest-impl"/>
-        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://dataconservancy.github.io/package-ingest/package-ingest-impl/"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="package-ingest-osgi"/>
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://dataconservancy.github.io/package-ingest/package-ingest-osgi/"/>
         <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
         <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/images/dc-logo.gif"/>
         <meta prefix="og: http://ogp.me/ns#" property="og:image:type" content="image/gif"/>
@@ -100,81 +100,17 @@
 <th>Type</th>
 <th>License</th></tr>
 <tr class="b">
-<td>commons-io</td>
-<td><a class="externalLink" href="http://commons.apache.org/io/">commons-io</a></td>
-<td>2.4</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
-<tr class="a">
-<td>org.apache.commons</td>
-<td><a class="externalLink" href="http://commons.apache.org/proper/commons-compress/">commons-compress</a></td>
-<td>1.9</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
-<tr class="b">
-<td>org.apache.jena</td>
-<td><a class="externalLink" href="http://jena.apache.org/jena-arq/">jena-arq</a></td>
-<td>3.0.0</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
-<tr class="a">
-<td>org.apache.jena</td>
-<td><a class="externalLink" href="http://jena.apache.org/jena-core/">jena-core</a></td>
-<td>3.0.0</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
-<tr class="b">
-<td>org.apache.tika</td>
-<td><a class="externalLink" href="http://tika.apache.org/">tika-bundle</a></td>
-<td>1.11</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></td></tr>
-<tr class="a">
-<td>org.apache.tika</td>
-<td><a class="externalLink" href="http://tika.apache.org/">tika-core</a></td>
-<td>1.11</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></td></tr>
-<tr class="b">
-<td>org.apache.tika</td>
-<td><a class="externalLink" href="http://tika.apache.org/">tika-java7</a></td>
-<td>1.10</td>
+<td>org.apache.camel</td>
+<td><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-core-osgi">camel-core-osgi</a></td>
+<td>2.16.1</td>
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="a">
 <td>org.dataconservancy.packaging</td>
-<td><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-api/">package-ingest-api</a></td>
-<td>0.1.3-20160303.134608-1</td>
+<td><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-camel/">package-ingest-camel</a></td>
+<td>0.1.3-20160303.134622-1</td>
 <td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a></td></tr></table></div><a name="Project_Dependencies_test"></a>
-<div class="section">
-<h3><a name="test"></a>test</h3>
-<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>GroupId</th>
-<th>ArtifactId</th>
-<th>Version</th>
-<th>Type</th>
-<th>License</th></tr>
-<tr class="b">
-<td>junit</td>
-<td><a class="externalLink" href="http://junit.org">junit</a></td>
-<td>4.12</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a></td></tr>
-<tr class="a">
-<td>org.mockito</td>
-<td><a class="externalLink" href="http://www.mockito.org">mockito-all</a></td>
-<td>1.10.19</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://github.com/mockito/mockito/blob/master/LICENSE">The MIT License</a></td></tr>
-<tr class="b">
-<td>org.slf4j</td>
-<td><a class="externalLink" href="http://www.slf4j.org">slf4j-nop</a></td>
-<td>1.7.10</td>
-<td>jar</td>
-<td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td></tr></table></div><a name="Project_Dependencies_provided"></a>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a></td></tr></table></div><a name="Project_Dependencies_provided"></a>
 <div class="section">
 <h3><a name="provided"></a>provided</h3>
 <p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
@@ -187,11 +123,17 @@
 <th>License</th></tr>
 <tr class="b">
 <td>org.osgi</td>
-<td><a class="externalLink" href="http://www.osgi.org">org.osgi.compendium</a></td>
+<td><a class="externalLink" href="http://www.osgi.org">org.osgi.core</a></td>
 <td>5.0.0</td>
 <td>jar</td>
 <td><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></td></tr>
 <tr class="a">
+<td>org.osgi</td>
+<td><a class="externalLink" href="http://www.osgi.org/">org.osgi.service.component.annotations</a></td>
+<td>1.3.0</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></td></tr>
+<tr class="b">
 <td>org.osgi</td>
 <td><a class="externalLink" href="http://www.osgi.org/">org.osgi.service.metatype.annotations</a></td>
 <td>1.3.0</td>
@@ -247,6 +189,30 @@
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="b">
+<td>commons-io</td>
+<td><a class="externalLink" href="http://commons.apache.org/io/">commons-io</a></td>
+<td>2.4</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="a">
+<td>org.apache.camel</td>
+<td><a class="externalLink" href="http://camel.apache.org/camel-parent/camel-core">camel-core</a></td>
+<td>2.16.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>org.apache.camel</td>
+<td><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-http-common">camel-http-common</a></td>
+<td>2.16.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="a">
+<td>org.apache.camel</td>
+<td><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-http4">camel-http4</a></td>
+<td>2.16.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="b">
 <td>org.apache.commons</td>
 <td><a class="externalLink" href="http://commons.apache.org/proper/commons-csv/">commons-csv</a></td>
 <td>1.0</td>
@@ -259,23 +225,35 @@
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="b">
+<td>org.apache.geronimo.specs</td>
+<td><a class="externalLink" href="http://geronimo.apache.org/maven/specs/geronimo-servlet_3.0_spec/1.0">geronimo-servlet_3.0_spec</a></td>
+<td>1.0</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="a">
 <td>org.apache.httpcomponents</td>
 <td><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">httpclient</a></td>
 <td>4.3.3</td>
 <td>jar</td>
 <td>LICENSE.txt</td></tr>
-<tr class="a">
+<tr class="b">
 <td>org.apache.httpcomponents</td>
 <td><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">httpclient-cache</a></td>
 <td>4.2.6</td>
 <td>jar</td>
 <td>LICENSE.txt</td></tr>
-<tr class="b">
+<tr class="a">
 <td>org.apache.httpcomponents</td>
 <td><a class="externalLink" href="http://hc.apache.org/httpcomponents-core-ga">httpcore</a></td>
 <td>4.3.3</td>
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>org.apache.jena</td>
+<td><a class="externalLink" href="http://jena.apache.org/jena-arq/">jena-arq</a></td>
+<td>3.0.0</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="a">
 <td>org.apache.jena</td>
 <td><a class="externalLink" href="http://jena.apache.org/jena-base/">jena-base</a></td>
@@ -284,22 +262,34 @@
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="b">
 <td>org.apache.jena</td>
-<td><a class="externalLink" href="http://jena.apache.org/jena-iri/">jena-iri</a></td>
+<td><a class="externalLink" href="http://jena.apache.org/jena-core/">jena-core</a></td>
 <td>3.0.0</td>
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="a">
 <td>org.apache.jena</td>
-<td><a class="externalLink" href="http://jena.apache.org/jena-shaded-guava/">jena-shaded-guava</a></td>
+<td><a class="externalLink" href="http://jena.apache.org/jena-iri/">jena-iri</a></td>
 <td>3.0.0</td>
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
 <tr class="b">
+<td>org.apache.jena</td>
+<td><a class="externalLink" href="http://jena.apache.org/jena-shaded-guava/">jena-shaded-guava</a></td>
+<td>3.0.0</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="a">
 <td>org.apache.thrift</td>
 <td><a class="externalLink" href="http://thrift.apache.org">libthrift</a></td>
 <td>0.9.2</td>
 <td>jar</td>
 <td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>org.dataconservancy.packaging</td>
+<td><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-api/">package-ingest-api</a></td>
+<td>0.1.3-20160303.134608-1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a></td></tr>
 <tr class="a">
 <td>org.slf4j</td>
 <td><a class="externalLink" href="http://www.slf4j.org">jcl-over-slf4j</a></td>
@@ -323,10 +313,10 @@
 <td><a class="externalLink" href="http://xml.apache.org/commons/components/external/">xml-apis</a></td>
 <td>1.4.01</td>
 <td>jar</td>
-<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a>-<a class="externalLink" href="http://www.saxproject.org/copying.html">The SAX License</a>-<a class="externalLink" href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip">The W3C License</a></td></tr></table></div><a name="Project_Transitive_Dependencies_test"></a>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a>-<a class="externalLink" href="http://www.saxproject.org/copying.html">The SAX License</a>-<a class="externalLink" href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip">The W3C License</a></td></tr></table></div><a name="Project_Transitive_Dependencies_runtime"></a>
 <div class="section">
-<h3><a name="test"></a>test</h3>
-<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<h3><a name="runtime"></a>runtime</h3>
+<p>The following is a list of runtime dependencies for this project. These dependencies are required to run the application:</p>
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>GroupId</th>
@@ -335,11 +325,47 @@
 <th>Type</th>
 <th>License</th></tr>
 <tr class="b">
-<td>org.hamcrest</td>
-<td><a class="externalLink" href="https://github.com/hamcrest/JavaHamcrest/hamcrest-core">hamcrest-core</a></td>
-<td>1.3</td>
+<td>commons-collections</td>
+<td><a class="externalLink" href="http://commons.apache.org/collections/">commons-collections</a></td>
+<td>3.2.2</td>
 <td>jar</td>
-<td><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></td></tr></table></div></div><a name="Project_Dependency_Graph"></a>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></td></tr>
+<tr class="a">
+<td>commons-lang</td>
+<td><a class="externalLink" href="http://commons.apache.org/lang/">commons-lang</a></td>
+<td>2.4</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>javax.mail</td>
+<td><a class="externalLink" href="http://kenai.com/projects/javamail/mail">mail</a></td>
+<td>1.4.7</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.sun.com/cddl">CDDL</a>-<a class="externalLink" href="https://glassfish.java.net/public/CDDL+GPL_1_1.html">GPLv2+CE</a></td></tr>
+<tr class="a">
+<td>org.apache.camel</td>
+<td><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-mail">camel-mail</a></td>
+<td>2.16.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>org.apache.camel</td>
+<td><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-velocity">camel-velocity</a></td>
+<td>2.16.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="a">
+<td>org.apache.velocity</td>
+<td><a class="externalLink" href="http://velocity.apache.org/engine/devel/">velocity</a></td>
+<td>1.7</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>org.slf4j</td>
+<td><a class="externalLink" href="http://www.slf4j.org">log4j-over-slf4j</a></td>
+<td>1.7.10</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache Software Licenses</a></td></tr></table></div></div><a name="Project_Dependency_Graph"></a>
 <div class="section">
 <h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2><script language="javascript" type="text/javascript">
       function toggleDependencyDetail( divId, imgId )
@@ -362,67 +388,47 @@
 <div class="section">
 <h3><a name="Dependency_Tree"></a>Dependency Tree</h3>
 <ul>
-<li>org.dataconservancy.packaging:package-ingest-impl:bundle:0.1.3-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep0', '_img1' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep0" style="display:none">
+<li>org.dataconservancy.packaging:package-ingest-osgi:bundle:0.1.3-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep0', '_img1' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep0" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>package-ingest-impl</th></tr>
+<th>package-ingest-osgi</th></tr>
 <tr class="b">
 <td>
 <p><b>Description: </b>The Data Conservancy Simple Package Ingest accepts packages that conform to version 1 of the  Data Conservancy
     Packaging Specification and imports their content into a Fedora repository.</p>
-<p><b>URL: </b><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-impl/">http://dataconservancy.github.io/package-ingest/package-ingest-impl/</a></p>
+<p><b>URL: </b><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-osgi/">http://dataconservancy.github.io/package-ingest/package-ingest-osgi/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>org.osgi:org.osgi.compendium:jar:5.0.0 (provided) <img id="_img3" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep2', '_img3' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep2" style="display:none">
+<li>org.dataconservancy.packaging:package-ingest-camel:jar:0.1.3-SNAPSHOT (compile) <img id="_img3" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep2', '_img3' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep2" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>osgi.cmpn</th></tr>
+<th>package-ingest-camel</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>OSGi Compendium Release 5, Interfaces and Classes for use in compiling bundles.</p>
-<p><b>URL: </b><a class="externalLink" href="http://www.osgi.org">http://www.osgi.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.osgi:org.osgi.service.metatype.annotations:jar:1.3.0 (provided) <img id="_img5" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep4', '_img5' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep4" style="display:none">
+<p><b>Description: </b>The Data Conservancy Simple Package Ingest accepts packages that conform to version 1 of the  Data Conservancy
+    Packaging Specification and imports their content into a Fedora repository.</p>
+<p><b>URL: </b><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-camel/">http://dataconservancy.github.io/package-ingest/package-ingest-camel/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>org.slf4j:slf4j-api:jar:1.7.10 (compile) <img id="_img5" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep4', '_img5' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep4" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>org.osgi:org.osgi.service.metatype.annotations</th></tr>
+<th>SLF4J API Module</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>OSGi Companion Code for org.osgi.service.metatype.annotations Version 1.3.0.</p>
-<p><b>URL: </b><a class="externalLink" href="http://www.osgi.org/">http://www.osgi.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.tika:tika-java7:jar:1.10 (compile) <img id="_img7" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep6', '_img7' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep6" style="display:none">
+<p><b>Description: </b>The slf4j API</p>
+<p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td></tr></table></div></li>
+<li>org.slf4j:log4j-over-slf4j:jar:1.7.10 (runtime) <img id="_img7" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep6', '_img7' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep6" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>Apache Tika Java-7 Components</th></tr>
+<th>Log4j Implemented Over SLF4J</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>Java-7 reliant components, including FileTypeDetector implementations</p>
-<p><b>URL: </b><a class="externalLink" href="http://tika.apache.org/">http://tika.apache.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.tika:tika-bundle:jar:1.11 (compile) <img id="_img9" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep8', '_img9' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep8" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Apache Tika OSGi bundle</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>OSGi bundle that contains the tika-parsers component and all its
-    upstream dependencies that aren't OSGI bundles by themselves. This
-    bundle exports no packages, only the Parser and Detector services
-    from the tika-parsers component.</p>
-<p><b>URL: </b><a class="externalLink" href="http://tika.apache.org/">http://tika.apache.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.tika:tika-core:jar:1.11 (compile) <img id="_img11" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep10', '_img11' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep10" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Apache Tika core</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>This is the core Apache Tika&#x2122; toolkit library from which all other modules inherit functionality. It also
-    includes the core facades for the Tika API.</p>
-<p><b>URL: </b><a class="externalLink" href="http://tika.apache.org/">http://tika.apache.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.dataconservancy.packaging:package-ingest-api:jar:0.1.3-SNAPSHOT (compile) <img id="_img13" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep12', '_img13' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep12" style="display:none">
+<p><b>Description: </b>Log4j implemented over SLF4J</p>
+<p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache Software Licenses</a></p></td></tr></table></div></li>
+<li>org.dataconservancy.packaging:package-ingest-api:jar:0.1.3-SNAPSHOT (compile) <img id="_img9" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep8', '_img9' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep8" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>package-ingest-api</th></tr>
@@ -432,29 +438,86 @@
     Packaging Specification and imports their content into a Fedora repository.</p>
 <p><b>URL: </b><a class="externalLink" href="http://dataconservancy.github.io/package-ingest/package-ingest-api/">http://dataconservancy.github.io/package-ingest/package-ingest-api/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.commons:commons-compress:jar:1.9 (compile) <img id="_img15" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep14', '_img15' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep14" style="display:none">
+<li>org.apache.camel:camel-core:jar:2.16.1 (compile) <img id="_img11" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep10', '_img11' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep10" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>Apache Commons Compress</th></tr>
+<th>Camel :: Core</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>Apache Commons Compress software defines an API for working with
-compression and archive formats.
-These include: bzip2, gzip, pack200, lzma, xz, Snappy, traditional
-Unix Compress, DEFLATE and ar, cpio, jar, tar, zip, dump, 7z, arj.</p>
-<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/proper/commons-compress/">http://commons.apache.org/proper/commons-compress/</a></p>
+<p><b>Description: </b>The Core Camel Java DSL based router</p>
+<p><b>URL: </b><a class="externalLink" href="http://camel.apache.org/camel-parent/camel-core">http://camel.apache.org/camel-parent/camel-core</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>commons-io:commons-io:jar:2.4 (compile) <img id="_img17" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep16', '_img17' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep16" style="display:none">
+<li>org.apache.camel:camel-http4:jar:2.16.1 (compile) <img id="_img13" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep12', '_img13' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep12" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>Commons IO</th></tr>
+<th>Camel :: HTTP4</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>The Commons IO library contains utility classes, stream implementations, file filters, 
-file comparators, endian transformation classes, and much more.</p>
-<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/io/">http://commons.apache.org/io/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.jena:jena-core:jar:3.0.0 (compile) <img id="_img19" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep18', '_img19' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep18" style="display:none">
+<p><b>Description: </b>Camel HTTP (Apache HttpClient 4.x) support</p>
+<p><b>URL: </b><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-http4">http://camel.apache.org/camel-parent/components/camel-http4</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>org.apache.camel:camel-http-common:jar:2.16.1 (compile) <img id="_img15" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep14', '_img15' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep14" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Camel :: HTTP :: Common</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>Camel HTTP common</p>
+<p><b>URL: </b><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-http-common">http://camel.apache.org/camel-parent/components/camel-http-common</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>org.apache.geronimo.specs:geronimo-servlet_3.0_spec:jar:1.0 (compile) <img id="_img17" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep16', '_img17' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep16" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Servlet 3.0</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>Servlet 3.0 API</p>
+<p><b>URL: </b><a class="externalLink" href="http://geronimo.apache.org/maven/specs/geronimo-servlet_3.0_spec/1.0">http://geronimo.apache.org/maven/specs/geronimo-servlet_3.0_spec/1.0</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
+<li>org.apache.httpcomponents:httpclient:jar:4.3.3 (compile) <img id="_img19" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep18', '_img19' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep18" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Apache HttpClient</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>HttpComponents Client</p>
+<p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">http://hc.apache.org/httpcomponents-client</a></p>
+<p><b>Project License: </b><a href="LICENSE.txt">Apache License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>org.apache.httpcomponents:httpcore:jar:4.3.3 (compile) <img id="_img21" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep20', '_img21' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep20" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Apache HttpCore</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>HttpComponents Core (blocking I/O)</p>
+<p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-core-ga">http://hc.apache.org/httpcomponents-core-ga</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>commons-codec:commons-codec:jar:1.4 (compile) <img id="_img23" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep22', '_img23' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep22" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Commons Codec</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>The codec package contains simple encoder and decoders for
+     various formats such as Base64 and Hexadecimal.  In addition to these
+     widely used encoders and decoders, the codec package also maintains a
+     collection of phonetic encoding utilities.</p>
+<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/codec/">http://commons.apache.org/codec/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></li>
+<li>org.apache.jena:jena-arq:jar:3.0.0 (compile) <img id="_img25" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep24', '_img25' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep24" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Apache Jena - ARQ (SPARQL 1.1 Query Engine)</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>ARQ is a SPARQL 1.1 query engine for Apache Jena</p>
+<p><b>URL: </b><a class="externalLink" href="http://jena.apache.org/jena-arq/">http://jena.apache.org/jena-arq/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>org.apache.jena:jena-core:jar:3.0.0 (compile) <img id="_img27" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep26', '_img27' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep26" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Jena - Core</th></tr>
@@ -464,16 +527,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>URL: </b><a class="externalLink" href="http://jena.apache.org/jena-core/">http://jena.apache.org/jena-core/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>org.slf4j:slf4j-api:jar:1.7.10 (compile) <img id="_img21" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep20', '_img21' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep20" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>SLF4J API Module</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>The slf4j API</p>
-<p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td></tr></table></div></li>
-<li>org.apache.jena:jena-iri:jar:3.0.0 (compile) <img id="_img23" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep22', '_img23' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep22" style="display:none">
+<li>org.apache.jena:jena-iri:jar:3.0.0 (compile) <img id="_img29" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep28', '_img29' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep28" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Jena - IRI</th></tr>
@@ -482,7 +536,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>The IRI module provides an implementation of the IRI and URI specifications (RFC 3987 and 3986) which are used across Jena in order to comply with relevant W3C specifications for RDF and SPARQL which require conformance to these specifications.</p>
 <p><b>URL: </b><a class="externalLink" href="http://jena.apache.org/jena-iri/">http://jena.apache.org/jena-iri/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>xerces:xercesImpl:jar:2.11.0 (compile) <img id="_img25" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep24', '_img25' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep24" style="display:none">
+<li>xerces:xercesImpl:jar:2.11.0 (compile) <img id="_img31" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep30', '_img31' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep30" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Xerces2-j</th></tr>
@@ -500,7 +554,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>URL: </b><a class="externalLink" href="https://xerces.apache.org/xerces2-j/">https://xerces.apache.org/xerces2-j/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>xml-apis:xml-apis:jar:1.4.01 (compile) <img id="_img27" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep26', '_img27' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep26" style="display:none">
+<li>xml-apis:xml-apis:jar:1.4.01 (compile) <img id="_img33" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep32', '_img33' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep32" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>XML Commons External Components XML APIs</th></tr>
@@ -516,7 +570,7 @@ file comparators, endian transformation classes, and much more.</p>
     JAXP it's Sun.</p>
 <p><b>URL: </b><a class="externalLink" href="http://xml.apache.org/commons/components/external/">http://xml.apache.org/commons/components/external/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a>, <a class="externalLink" href="http://www.saxproject.org/copying.html">The SAX License</a>, <a class="externalLink" href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip">The W3C License</a></p></td></tr></table></div></li></ul></li>
-<li>commons-cli:commons-cli:jar:1.2 (compile) <img id="_img29" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep28', '_img29' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep28" style="display:none">
+<li>commons-cli:commons-cli:jar:1.2 (compile) <img id="_img35" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep34', '_img35' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep34" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Commons CLI</th></tr>
@@ -525,7 +579,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>Commons CLI provides a simple API for presenting, processing and validating a command line interface.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/cli/">http://commons.apache.org/cli/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.jena:jena-base:jar:3.0.0 (compile) <img id="_img31" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep30', '_img31' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep30" style="display:none">
+<li>org.apache.jena:jena-base:jar:3.0.0 (compile) <img id="_img37" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep36', '_img37' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep36" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Jena - Base Common Environment</th></tr>
@@ -534,17 +588,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>This module contains non-RDF library code and the common system runtime.</p>
 <p><b>URL: </b><a class="externalLink" href="http://jena.apache.org/jena-base/">http://jena.apache.org/jena-base/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>org.apache.jena:jena-arq:jar:3.0.0 (compile) <img id="_img33" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep32', '_img33' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep32" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Apache Jena - ARQ (SPARQL 1.1 Query Engine)</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>ARQ is a SPARQL 1.1 query engine for Apache Jena</p>
-<p><b>URL: </b><a class="externalLink" href="http://jena.apache.org/jena-arq/">http://jena.apache.org/jena-arq/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
-<ul>
-<li>org.apache.jena:jena-shaded-guava:jar:3.0.0 (compile) <img id="_img35" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep34', '_img35' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep34" style="display:none">
+<li>org.apache.jena:jena-shaded-guava:jar:3.0.0 (compile) <img id="_img39" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep38', '_img39' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep38" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Jena - Shadowed external libraries</th></tr>
@@ -559,38 +603,7 @@ file comparators, endian transformation classes, and much more.</p>
     org.apache.jena.ext.com.google....</p>
 <p><b>URL: </b><a class="externalLink" href="http://jena.apache.org/jena-shaded-guava/">http://jena.apache.org/jena-shaded-guava/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.httpcomponents:httpclient:jar:4.3.3 (compile) <img id="_img37" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep36', '_img37' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep36" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Apache HttpClient</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>HttpComponents Client</p>
-<p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">http://hc.apache.org/httpcomponents-client</a></p>
-<p><b>Project License: </b><a href="LICENSE.txt">Apache License, Version 2.0</a></p></td></tr></table></div>
-<ul>
-<li>org.apache.httpcomponents:httpcore:jar:4.3.3 (compile) <img id="_img39" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep38', '_img39' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep38" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Apache HttpCore</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>HttpComponents Core (blocking I/O)</p>
-<p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-core-ga">http://hc.apache.org/httpcomponents-core-ga</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>commons-codec:commons-codec:jar:1.4 (compile) <img id="_img41" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep40', '_img41' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep40" style="display:none">
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Commons Codec</th></tr>
-<tr class="b">
-<td>
-<p><b>Description: </b>The codec package contains simple encoder and decoders for
-     various formats such as Base64 and Hexadecimal.  In addition to these
-     widely used encoders and decoders, the codec package also maintains a
-     collection of phonetic encoding utilities.</p>
-<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/codec/">http://commons.apache.org/codec/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>com.github.jsonld-java:jsonld-java:jar:0.7.0 (compile) <img id="_img43" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep42', '_img43' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep42" style="display:none">
+<li>com.github.jsonld-java:jsonld-java:jar:0.7.0 (compile) <img id="_img41" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep40', '_img41' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep40" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>JSONLD Java :: Core</th></tr>
@@ -600,7 +613,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>URL: </b><a class="externalLink" href="http://github.com/jsonld-java/jsonld-java/jsonld-java/">http://github.com/jsonld-java/jsonld-java/jsonld-java/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="https://raw.github.com/jsonld-java/jsonld-java/master/LICENCE">Revised BSD License</a></p></td></tr></table></div>
 <ul>
-<li>com.fasterxml.jackson.core:jackson-core:jar:2.3.3 (compile) <img id="_img45" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep44', '_img45' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep44" style="display:none">
+<li>com.fasterxml.jackson.core:jackson-core:jar:2.3.3 (compile) <img id="_img43" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep42', '_img43' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep42" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Jackson-core</th></tr>
@@ -609,7 +622,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>Core Jackson abstractions, basic JSON streaming API implementation</p>
 <p><b>URL: </b><a class="externalLink" href="http://wiki.fasterxml.com/JacksonHome">http://wiki.fasterxml.com/JacksonHome</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a>, <a class="externalLink" href="http://www.gnu.org/licenses/lgpl-2.1.html">GNU Lesser General Public License, Version 2.1</a></p></td></tr></table></div></li>
-<li>com.fasterxml.jackson.core:jackson-databind:jar:2.3.3 (compile) <img id="_img47" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep46', '_img47' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep46" style="display:none">
+<li>com.fasterxml.jackson.core:jackson-databind:jar:2.3.3 (compile) <img id="_img45" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep44', '_img45' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep44" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>jackson-databind</th></tr>
@@ -619,7 +632,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>URL: </b><a class="externalLink" href="http://wiki.fasterxml.com/JacksonHome">http://wiki.fasterxml.com/JacksonHome</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a>, <a class="externalLink" href="http://www.gnu.org/licenses/lgpl-2.1.html">GNU Lesser General Public License, Version 2.1</a></p></td></tr></table></div>
 <ul>
-<li>com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0 (compile) <img id="_img49" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep48', '_img49' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep48" style="display:none">
+<li>com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0 (compile) <img id="_img47" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep46', '_img47' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep46" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Jackson-annotations</th></tr>
@@ -628,7 +641,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>Core annotations used for value types, used by Jackson data binding package.</p>
 <p><b>URL: </b><a class="externalLink" href="http://wiki.fasterxml.com/JacksonHome">http://wiki.fasterxml.com/JacksonHome</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a>, <a class="externalLink" href="http://www.gnu.org/licenses/lgpl-2.1.html">GNU Lesser General Public License, Version 2.1</a></p></td></tr></table></div></li></ul></li></ul></li>
-<li>org.apache.httpcomponents:httpclient-cache:jar:4.2.6 (compile) <img id="_img51" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep50', '_img51' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep50" style="display:none">
+<li>org.apache.httpcomponents:httpclient-cache:jar:4.2.6 (compile) <img id="_img49" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep48', '_img49' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep48" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache HttpClient Cache</th></tr>
@@ -637,7 +650,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>HttpComponents HttpClient - Cache</p>
 <p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">http://hc.apache.org/httpcomponents-client</a></p>
 <p><b>Project License: </b><a href="LICENSE.txt">Apache License</a></p></td></tr></table></div></li>
-<li>org.apache.thrift:libthrift:jar:0.9.2 (compile) <img id="_img53" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep52', '_img53' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep52" style="display:none">
+<li>org.apache.thrift:libthrift:jar:0.9.2 (compile) <img id="_img51" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep50', '_img51' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep50" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Thrift</th></tr>
@@ -646,7 +659,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>Thrift is a software framework for scalable cross-language services development.</p>
 <p><b>URL: </b><a class="externalLink" href="http://thrift.apache.org">http://thrift.apache.org</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.slf4j:jcl-over-slf4j:jar:1.7.10 (compile) <img id="_img55" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep54', '_img55' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep54" style="display:none">
+<li>org.slf4j:jcl-over-slf4j:jar:1.7.10 (compile) <img id="_img53" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep52', '_img53' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep52" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>JCL 1.1.1 implemented over SLF4J</th></tr>
@@ -655,7 +668,7 @@ file comparators, endian transformation classes, and much more.</p>
 <p><b>Description: </b>JCL 1.1.1 implemented over SLF4J</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td></tr></table></div></li>
-<li>org.apache.commons:commons-csv:jar:1.0 (compile) <img id="_img57" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep56', '_img57' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep56" style="display:none">
+<li>org.apache.commons:commons-csv:jar:1.0 (compile) <img id="_img55" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep54', '_img55' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep54" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Commons CSV</th></tr>
@@ -665,7 +678,7 @@ file comparators, endian transformation classes, and much more.</p>
 CSV files of various types.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/proper/commons-csv/">http://commons.apache.org/proper/commons-csv/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.commons:commons-lang3:jar:3.3.2 (compile) <img id="_img59" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep58', '_img59' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep58" style="display:none">
+<li>org.apache.commons:commons-lang3:jar:3.3.2 (compile) <img id="_img57" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep56', '_img57' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep56" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Apache Commons Lang</th></tr>
@@ -676,56 +689,125 @@ CSV files of various types.</p>
   standard as to justify existence in java.lang.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/proper/commons-lang/">http://commons.apache.org/proper/commons-lang/</a></p>
 <p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>junit:junit:jar:4.12 (test) <img id="_img61" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep60', '_img61' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep60" style="display:none">
+<li>org.apache.camel:camel-velocity:jar:2.16.1 (runtime) <img id="_img59" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep58', '_img59' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep58" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>JUnit</th></tr>
+<th>Camel :: Velocity</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.</p>
-<p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a></p></td></tr></table></div>
+<p><b>Description: </b>Camel Velocity support</p>
+<p><b>URL: </b><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-velocity">http://camel.apache.org/camel-parent/components/camel-velocity</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>org.hamcrest:hamcrest-core:jar:1.3 (test) <img id="_img63" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep62', '_img63' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep62" style="display:none">
+<li>org.apache.velocity:velocity:jar:1.7 (runtime) <img id="_img61" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep60', '_img61' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep60" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>Hamcrest Core</th></tr>
+<th>Apache Velocity</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.</p>
-<p><b>URL: </b><a class="externalLink" href="https://github.com/hamcrest/JavaHamcrest/hamcrest-core">https://github.com/hamcrest/JavaHamcrest/hamcrest-core</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></p></td></tr></table></div></li></ul></li>
-<li>org.mockito:mockito-all:jar:1.10.19 (test) <img id="_img65" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep64', '_img65' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep64" style="display:none">
+<p><b>Description: </b>Apache Velocity is a general purpose template engine.</p>
+<p><b>URL: </b><a class="externalLink" href="http://velocity.apache.org/engine/devel/">http://velocity.apache.org/engine/devel/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>commons-collections:commons-collections:jar:3.2.2 (runtime) <img id="_img63" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep62', '_img63' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep62" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>Mockito</th></tr>
+<th>Apache Commons Collections</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>Mock objects library for java</p>
-<p><b>URL: </b><a class="externalLink" href="http://www.mockito.org">http://www.mockito.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://github.com/mockito/mockito/blob/master/LICENSE">The MIT License</a></p></td></tr></table></div></li>
-<li>org.slf4j:slf4j-nop:jar:1.7.10 (test) <img id="_img67" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep66', '_img67' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep66" style="display:none">
+<p><b>Description: </b>Types that extend and augment the Java Collections Framework.</p>
+<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/collections/">http://commons.apache.org/collections/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>commons-lang:commons-lang:jar:2.4 (runtime) <img id="_img65" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep64', '_img65' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep64" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
-<th>SLF4J NOP Binding</th></tr>
+<th>Commons Lang</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>SLF4J NOP Binding</p>
-<p><b>URL: </b><a class="externalLink" href="http://www.slf4j.org">http://www.slf4j.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
+<p><b>Description: </b>Commons Lang, a package of Java utility classes for the
+        classes that are in java.lang's hierarchy, or are considered to be so
+        standard as to justify existence in java.lang.</p>
+<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/lang/">http://commons.apache.org/lang/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></li>
+<li>commons-io:commons-io:jar:2.4 (compile) <img id="_img67" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep66', '_img67' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep66" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Commons IO</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>The Commons IO library contains utility classes, stream implementations, file filters, 
+file comparators, endian transformation classes, and much more.</p>
+<p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/io/">http://commons.apache.org/io/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.apache.camel:camel-mail:jar:2.16.1 (runtime) <img id="_img69" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep68', '_img69' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep68" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Camel :: Mail</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>Camel Mail support</p>
+<p><b>URL: </b><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-mail">http://camel.apache.org/camel-parent/components/camel-mail</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<ul>
+<li>javax.mail:mail:jar:1.4.7 (runtime) <img id="_img71" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep70', '_img71' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep70" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>JavaMail API (compat)</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>JavaMail API (compat)</p>
+<p><b>URL: </b><a class="externalLink" href="http://kenai.com/projects/javamail/mail">http://kenai.com/projects/javamail/mail</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.sun.com/cddl">CDDL</a>, <a class="externalLink" href="https://glassfish.java.net/public/CDDL+GPL_1_1.html">GPLv2+CE</a></p></td></tr></table></div></li></ul></li></ul></li>
+<li>org.osgi:org.osgi.service.metatype.annotations:jar:1.3.0 (provided) <img id="_img73" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep72', '_img73' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep72" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>org.osgi:org.osgi.service.metatype.annotations</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>OSGi Companion Code for org.osgi.service.metatype.annotations Version 1.3.0.</p>
+<p><b>URL: </b><a class="externalLink" href="http://www.osgi.org/">http://www.osgi.org/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.osgi:org.osgi.service.component.annotations:jar:1.3.0 (provided) <img id="_img75" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep74', '_img75' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep74" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>org.osgi:org.osgi.service.component.annotations</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>OSGi Companion Code for org.osgi.service.component.annotations Version 1.3.0.</p>
+<p><b>URL: </b><a class="externalLink" href="http://www.osgi.org/">http://www.osgi.org/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.osgi:org.osgi.core:jar:5.0.0 (provided) <img id="_img77" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep76', '_img77' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep76" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>osgi.core</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>OSGi Service Platform Release 5 Version 5.0, Core Interfaces
+     and Classes for use in compiling bundles.</p>
+<p><b>URL: </b><a class="externalLink" href="http://www.osgi.org">http://www.osgi.org</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/apache2.0.php">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.apache.camel:camel-core-osgi:jar:2.16.1 (compile) <img id="_img79" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep78', '_img79' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep78" style="display:none">
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Camel :: Core OSGi</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>Camel Core OSGi support</p>
+<p><b>URL: </b><a class="externalLink" href="http://camel.apache.org/camel-parent/components/camel-core-osgi">http://camel.apache.org/camel-parent/components/camel-core-osgi</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
 <div class="section">
 <h2><a name="Licenses"></a>Licenses</h2>
+<p><b>GPLv2+CE: </b>JavaMail API (compat)</p>
 <p><b>The SAX License: </b>XML Commons External Components XML APIs</p>
 <p><b>GNU Lesser General Public License, Version 2.1: </b>Jackson-annotations, Jackson-core, jackson-databind</p>
-<p><b>Eclipse Public License 1.0: </b>JUnit</p>
-<p><b>MIT License: </b>JCL 1.1.1 implemented over SLF4J, SLF4J API Module, SLF4J NOP Binding</p>
+<p><b>Apache Software Licenses: </b>Log4j Implemented Over SLF4J</p>
+<p><b>CDDL: </b>JavaMail API (compat)</p>
+<p><b>MIT License: </b>JCL 1.1.1 implemented over SLF4J, SLF4J API Module</p>
 <p><b>Apache License: </b>Apache HttpClient Cache</p>
-<p><b>The MIT License: </b>Mockito</p>
-<p><b>Apache License, Version 2.0: </b>Apache HttpClient, Apache HttpCore, Apache Tika OSGi bundle, Apache Tika core, org.osgi:org.osgi.service.metatype.annotations, osgi.cmpn, package-ingest-api, package-ingest-impl</p>
+<p><b>Apache License, Version 2.0: </b>Apache Commons Collections, Apache HttpClient, Apache HttpCore, org.osgi:org.osgi.service.component.annotations, org.osgi:org.osgi.service.metatype.annotations, osgi.core, package-ingest-api, package-ingest-camel, package-ingest-osgi</p>
 <p><b>The W3C License: </b>XML Commons External Components XML APIs</p>
 <p><b>Revised BSD License: </b>JSONLD Java :: Core</p>
-<p><b>New BSD License: </b>Hamcrest Core</p>
-<p><b>The Apache Software License, Version 2.0: </b>Apache Commons CSV, Apache Commons Compress, Apache Commons Lang, Apache Jena - ARQ (SPARQL 1.1 Query Engine), Apache Jena - Base Common Environment, Apache Jena - Core, Apache Jena - IRI, Apache Jena - Shadowed external libraries, Apache Thrift, Apache Tika Java-7 Components, Commons CLI, Commons Codec, Commons IO, Jackson-annotations, Jackson-core, XML Commons External Components XML APIs, Xerces2-j, jackson-databind</p></div><a name="Dependency_File_Details"></a>
+<p><b>The Apache Software License, Version 2.0: </b>Apache Commons CSV, Apache Commons Lang, Apache Jena - ARQ (SPARQL 1.1 Query Engine), Apache Jena - Base Common Environment, Apache Jena - Core, Apache Jena - IRI, Apache Jena - Shadowed external libraries, Apache Thrift, Apache Velocity, Camel :: Core, Camel :: Core OSGi, Camel :: HTTP :: Common, Camel :: HTTP4, Camel :: Mail, Camel :: Velocity, Commons CLI, Commons Codec, Commons IO, Commons Lang, Jackson-annotations, Jackson-core, Servlet 3.0, XML Commons External Components XML APIs, Xerces2-j, jackson-databind</p></div><a name="Dependency_File_Details"></a>
 <div class="section">
 <h2><a name="Dependency_File_Details"></a>Dependency File Details</h2>
 <table border="0" class="table table-striped">
@@ -786,6 +868,14 @@ CSV files of various types.</p>
 <td>1.4</td>
 <td>Yes</td></tr>
 <tr class="b">
+<td>commons-collections-3.2.2.jar</td>
+<td>588.34 kB</td>
+<td>484</td>
+<td>460</td>
+<td>12</td>
+<td>1.3</td>
+<td>Yes</td></tr>
+<tr class="a">
 <td>commons-io-2.4.jar</td>
 <td>185.14 kB</td>
 <td>128</td>
@@ -793,23 +883,71 @@ CSV files of various types.</p>
 <td>6</td>
 <td>1.6</td>
 <td>Yes</td></tr>
+<tr class="b">
+<td>commons-lang-2.4.jar</td>
+<td>261.81 kB</td>
+<td>148</td>
+<td>127</td>
+<td>9</td>
+<td>1.2</td>
+<td>Yes</td></tr>
 <tr class="a">
-<td>junit-4.12.jar</td>
-<td>314.93 kB</td>
-<td>323</td>
-<td>286</td>
-<td>30</td>
-<td>1.5</td>
+<td>mail-1.4.7.jar</td>
+<td>521.16 kB</td>
+<td>324</td>
+<td>293</td>
+<td>14</td>
+<td>1.4</td>
 <td>Yes</td></tr>
 <tr class="b">
-<td>commons-compress-1.9.jar</td>
-<td>378.22 kB</td>
-<td>234</td>
-<td>200</td>
-<td>21</td>
-<td>1.5</td>
+<td>camel-core-2.16.1.jar</td>
+<td>3.36 MB</td>
+<td>2410</td>
+<td>2026</td>
+<td>78</td>
+<td>1.6</td>
 <td>Yes</td></tr>
 <tr class="a">
+<td>camel-core-osgi-2.16.1.jar</td>
+<td>52.42 kB</td>
+<td>39</td>
+<td>21</td>
+<td>2</td>
+<td>1.6</td>
+<td>Yes</td></tr>
+<tr class="b">
+<td>camel-http-common-2.16.1.jar</td>
+<td>56.82 kB</td>
+<td>45</td>
+<td>23</td>
+<td>1</td>
+<td>1.6</td>
+<td>Yes</td></tr>
+<tr class="a">
+<td>camel-http4-2.16.1.jar</td>
+<td>61.20 kB</td>
+<td>47</td>
+<td>16</td>
+<td>2</td>
+<td>1.6</td>
+<td>Yes</td></tr>
+<tr class="b">
+<td>camel-mail-2.16.1.jar</td>
+<td>129.64 kB</td>
+<td>69</td>
+<td>27</td>
+<td>1</td>
+<td>1.6</td>
+<td>Yes</td></tr>
+<tr class="a">
+<td>camel-velocity-2.16.1.jar</td>
+<td>25.49 kB</td>
+<td>31</td>
+<td>5</td>
+<td>1</td>
+<td>1.6</td>
+<td>Yes</td></tr>
+<tr class="b">
 <td>commons-csv-1.0.jar</td>
 <td>34.83 kB</td>
 <td>27</td>
@@ -817,13 +955,21 @@ CSV files of various types.</p>
 <td>1</td>
 <td>1.6</td>
 <td>Yes</td></tr>
-<tr class="b">
+<tr class="a">
 <td>commons-lang3-3.3.2.jar</td>
 <td>412.74 kB</td>
 <td>241</td>
 <td>217</td>
 <td>12</td>
 <td>1.6</td>
+<td>Yes</td></tr>
+<tr class="b">
+<td>geronimo-servlet_3.0_spec-1.0.jar</td>
+<td>96.32 kB</td>
+<td>107</td>
+<td>74</td>
+<td>4</td>
+<td>1.5</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>httpclient-4.3.3.jar</td>
@@ -898,28 +1044,12 @@ CSV files of various types.</p>
 <td>1.5</td>
 <td>Yes</td></tr>
 <tr class="b">
-<td>tika-bundle-1.11.jar</td>
-<td>37.50 MB</td>
-<td>474</td>
-<td>341</td>
-<td>53</td>
-<td>1.6</td>
-<td>Yes</td></tr>
-<tr class="a">
-<td>tika-core-1.11.jar</td>
-<td>583.09 kB</td>
-<td>326</td>
-<td>265</td>
-<td>18</td>
-<td>1.6</td>
-<td>Yes</td></tr>
-<tr class="b">
-<td>tika-java7-1.10.jar</td>
-<td>12.94 kB</td>
-<td>18</td>
-<td>2</td>
-<td>1</td>
-<td>1.6</td>
+<td>velocity-1.7.jar</td>
+<td>449.51 kB</td>
+<td>306</td>
+<td>270</td>
+<td>25</td>
+<td>1.4</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>package-ingest-api-0.1.3-SNAPSHOT.jar</td>
@@ -930,27 +1060,27 @@ CSV files of various types.</p>
 <td>1.6</td>
 <td>Yes</td></tr>
 <tr class="b">
-<td>hamcrest-core-1.3.jar</td>
-<td>45.02 kB</td>
-<td>52</td>
-<td>45</td>
+<td>package-ingest-camel-0.1.3-SNAPSHOT.jar</td>
+<td>61.13 kB</td>
+<td>53</td>
+<td>13</td>
 <td>3</td>
-<td>1.5</td>
+<td>1.6</td>
 <td>Yes</td></tr>
 <tr class="a">
-<td>mockito-all-1.10.19.jar</td>
-<td>1.23 MB</td>
-<td>1215</td>
-<td>752</td>
-<td>79</td>
+<td>org.osgi.core-5.0.0.jar</td>
+<td>430.35 kB</td>
+<td>317</td>
+<td>132</td>
+<td>16</td>
 <td>1.5</td>
 <td>Yes</td></tr>
 <tr class="b">
-<td>org.osgi.compendium-5.0.0.jar</td>
-<td>771.16 kB</td>
-<td>717</td>
-<td>267</td>
-<td>41</td>
+<td>org.osgi.service.component.annotations-1.3.0.jar</td>
+<td>35.92 kB</td>
+<td>48</td>
+<td>13</td>
+<td>1</td>
 <td>1.5</td>
 <td>Yes</td></tr>
 <tr class="a">
@@ -970,19 +1100,19 @@ CSV files of various types.</p>
 <td>1.5</td>
 <td>Yes</td></tr>
 <tr class="a">
+<td>log4j-over-slf4j-1.7.10.jar</td>
+<td>24.41 kB</td>
+<td>44</td>
+<td>31</td>
+<td>4</td>
+<td>1.5</td>
+<td>Yes</td></tr>
+<tr class="b">
 <td>slf4j-api-1.7.10.jar</td>
 <td>32.12 kB</td>
 <td>39</td>
 <td>28</td>
 <td>3</td>
-<td>1.5</td>
-<td>Yes</td></tr>
-<tr class="b">
-<td>slf4j-nop-1.7.10.jar</td>
-<td>4.09 kB</td>
-<td>13</td>
-<td>3</td>
-<td>1</td>
 <td>1.5</td>
 <td>Yes</td></tr>
 <tr class="a">
@@ -1010,37 +1140,37 @@ CSV files of various types.</p>
 <th>Java Version</th>
 <th>Debug Information</th></tr>
 <tr class="b">
-<td>33</td>
-<td>52.73 MB</td>
-<td>12370</td>
-<td>10374</td>
-<td>581</td>
+<td>39</td>
+<td>18.05 MB</td>
+<td>13470</td>
+<td>11744</td>
+<td>507</td>
 <td>1.6</td>
-<td>31</td></tr>
+<td>37</td></tr>
 <tr class="a">
-<td>compile: 27</td>
-<td>compile: 50.34 MB</td>
-<td>compile: 10014</td>
-<td>compile: 9014</td>
-<td>compile: 426</td>
+<td>compile: 29</td>
+<td>compile: 15.56 MB</td>
+<td>compile: 11663</td>
+<td>compile: 10379</td>
+<td>compile: 423</td>
 <td>-</td>
-<td>compile: 25</td></tr>
+<td>compile: 27</td></tr>
 <tr class="b">
-<td>test: 4</td>
-<td>test: 1.60 MB</td>
-<td>test: 1603</td>
-<td>test: 1086</td>
-<td>test: 113</td>
+<td>runtime: 7</td>
+<td>runtime: 2.00 MB</td>
+<td>runtime: 1406</td>
+<td>runtime: 1213</td>
+<td>runtime: 66</td>
 <td>-</td>
-<td>test: 4</td></tr>
+<td>runtime: 7</td></tr>
 <tr class="a">
-<td>provided: 2</td>
-<td>provided: 794.73 kB</td>
-<td>provided: 753</td>
-<td>provided: 274</td>
-<td>provided: 42</td>
+<td>provided: 3</td>
+<td>provided: 489.84 kB</td>
+<td>provided: 401</td>
+<td>provided: 152</td>
+<td>provided: 18</td>
 <td>-</td>
-<td>provided: 2</td></tr></table></div><a name="Dependency_Repository_Locations"></a>
+<td>provided: 3</td></tr></table></div><a name="Dependency_Repository_Locations"></a>
 <div class="section">
 <h2><a name="Dependency_Repository_Locations"></a>Dependency Repository Locations</h2>
 <table border="0" class="table table-striped">
@@ -1093,23 +1223,35 @@ CSV files of various types.</p>
 <td>Yes</td>
 <td>No</td></tr>
 <tr class="a">
+<td>jvnet-nexus-snapshots</td>
+<td><a class="externalLink" href="https://maven.java.net/content/repositories/snapshots">https://maven.java.net/content/repositories/snapshots</a></td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td></tr>
+<tr class="b">
 <td>spy</td>
 <td><a class="externalLink" href="http://files.couchbase.com/maven2/">http://files.couchbase.com/maven2/</a></td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td></tr>
-<tr class="b">
+<tr class="a">
 <td>dc.maven.releases</td>
 <td><a class="externalLink" href="http://maven.dataconservancy.org/public/releases/">http://maven.dataconservancy.org/public/releases/</a></td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td></tr>
-<tr class="a">
-<td>apache.snapshots</td>
-<td><a class="externalLink" href="http://repository.apache.org/snapshots">http://repository.apache.org/snapshots</a></td>
+<tr class="b">
+<td>codehaus.snapshots</td>
+<td><a class="externalLink" href="http://snapshots.repository.codehaus.org">http://snapshots.repository.codehaus.org</a></td>
 <td>No</td>
 <td>Yes</td>
-<td>No</td></tr></table>
+<td>Yes</td></tr>
+<tr class="a">
+<td>apache.snapshots</td>
+<td><a class="externalLink" href="http://people.apache.org/repo/m2-snapshot-repository">http://people.apache.org/repo/m2-snapshot-repository</a></td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td></tr></table>
 <p>Repository locations for each of the Dependencies.</p>
 <table border="0" class="table table-striped">
 <tr class="a">
@@ -1117,9 +1259,9 @@ CSV files of various types.</p>
 <th>sonatype_snapshot</th>
 <th>dc.maven.snapshots</th>
 <th>sonatype-nexus-snapshots</th>
+<th>jvnet-nexus-snapshots</th>
 <th>spy</th>
-<th>dc.maven.releases</th>
-<th>apache.snapshots</th></tr>
+<th>dc.maven.releases</th></tr>
 <tr class="b">
 <td>com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0</td>
 <td>-</td>
@@ -1169,6 +1311,14 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
+<td>commons-collections:commons-collections:jar:3.2.2</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="a">
 <td>commons-io:commons-io:jar:2.4</td>
 <td>-</td>
 <td>-</td>
@@ -1176,8 +1326,16 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td>
 <td>-</td></tr>
+<tr class="b">
+<td>commons-lang:commons-lang:jar:2.4</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
 <tr class="a">
-<td>junit:junit:jar:4.12</td>
+<td>javax.mail:mail:jar:1.4.7</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1185,7 +1343,7 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
-<td>org.apache.commons:commons-compress:jar:1.9</td>
+<td>org.apache.camel:camel-core:jar:2.16.1</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1193,6 +1351,46 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
+<td>org.apache.camel:camel-core-osgi:jar:2.16.1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="b">
+<td>org.apache.camel:camel-http-common:jar:2.16.1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="a">
+<td>org.apache.camel:camel-http4:jar:2.16.1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="b">
+<td>org.apache.camel:camel-mail:jar:2.16.1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="a">
+<td>org.apache.camel:camel-velocity:jar:2.16.1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="b">
 <td>org.apache.commons:commons-csv:jar:1.0</td>
 <td>-</td>
 <td>-</td>
@@ -1200,8 +1398,16 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td>
 <td>-</td></tr>
-<tr class="b">
+<tr class="a">
 <td>org.apache.commons:commons-lang3:jar:3.3.2</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td></tr>
+<tr class="b">
+<td>org.apache.geronimo.specs:geronimo-servlet_3.0_spec:jar:1.0</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1281,23 +1487,7 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
-<td>org.apache.tika:tika-bundle:jar:1.11</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td></tr>
-<tr class="a">
-<td>org.apache.tika:tika-core:jar:1.11</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td></tr>
-<tr class="b">
-<td>org.apache.tika:tika-java7:jar:1.10</td>
+<td>org.apache.velocity:velocity:jar:1.7</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1313,15 +1503,15 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
-<td>org.hamcrest:hamcrest-core:jar:1.3</td>
+<td>org.dataconservancy.packaging:package-ingest-camel:jar:0.1.3-SNAPSHOT</td>
 <td>-</td>
-<td>-</td>
+<td><a class="externalLink" href="http://maven.dataconservancy.org/public/snapshots//org/dataconservancy/packaging/package-ingest-camel/0.1.3-SNAPSHOT/package-ingest-camel-0.1.3-20160303.134622-1.jar"><img alt="Found at http://maven.dataconservancy.org/public/snapshots/" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
-<td>org.mockito:mockito-all:jar:1.10.19</td>
+<td>org.osgi:org.osgi.core:jar:5.0.0</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1329,7 +1519,7 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
-<td>org.osgi:org.osgi.compendium:jar:5.0.0</td>
+<td>org.osgi:org.osgi.service.component.annotations:jar:1.3.0</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1353,7 +1543,7 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
-<td>org.slf4j:slf4j-api:jar:1.7.10</td>
+<td>org.slf4j:log4j-over-slf4j:jar:1.7.10</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1361,7 +1551,7 @@ CSV files of various types.</p>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
-<td>org.slf4j:slf4j-nop:jar:1.7.10</td>
+<td>org.slf4j:slf4j-api:jar:1.7.10</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -1389,13 +1579,13 @@ CSV files of various types.</p>
 <th>sonatype_snapshot</th>
 <th>dc.maven.snapshots</th>
 <th>sonatype-nexus-snapshots</th>
+<th>jvnet-nexus-snapshots</th>
 <th>spy</th>
-<th>dc.maven.releases</th>
-<th>apache.snapshots</th></tr>
+<th>dc.maven.releases</th></tr>
 <tr class="b">
-<td>33 (compile: 27, test: 4, provided: 2)</td>
+<td>39 (compile: 29, runtime: 7, provided: 3)</td>
 <td>0</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
