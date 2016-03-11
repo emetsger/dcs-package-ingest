@@ -298,7 +298,7 @@
     <site>
       <id>github</id>
       <name>GitHub Pages Website</name>
-      <url>${project.url}</url>
+      <url>http://dataconservancy.github.io/package-ingest/</url>
     </site>
 
   </distributionManagement>
