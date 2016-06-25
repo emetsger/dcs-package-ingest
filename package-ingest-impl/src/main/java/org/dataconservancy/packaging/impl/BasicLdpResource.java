@@ -16,13 +16,18 @@
 package org.dataconservancy.packaging.impl;
 
 import org.dataconservancy.packaging.ingest.LdpResource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.InputStream;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 public class BasicLdpResource implements LdpResource {
+
+    private static final Logger LOG = LoggerFactory.getLogger(BasicLdpResource.class);
 
     private URI uri;
     private Type type;
@@ -34,6 +39,7 @@ public class BasicLdpResource implements LdpResource {
     public BasicLdpResource(URI uri) {
         this.uri = uri;
         children = new ArrayList<>();
+        LOG.debug("Creating LDP resource '{}'", uri != null ? uri.toString() : "<null uri>");
     }
 
     @Override
@@ -60,6 +66,15 @@ public class BasicLdpResource implements LdpResource {
 
     @Override
     public Collection<LdpResource> getChildren() {
+        LOG.debug("Retrieving children of '{}': {}",
+                (uri != null)
+                        ? this.uri.toString()
+                        : "<null uri>",
+                (children.isEmpty())
+                        ? "<empty list>" :
+                        children.stream()
+                                .map(c -> (c.getURI() != null) ? c.getURI().toString() : "" )
+                                .collect(Collectors.joining(", ", "", "")));
         return children;
     }
 
