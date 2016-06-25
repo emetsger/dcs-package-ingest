@@ -265,9 +265,9 @@ public abstract class DepositIT {
 
         assertEquals(0, success.size());
         assertEquals(1, fail.size());
-        assertTrue(getRootCause(fail.get(0)
+        assertEquals(UnknownHostException.class, getRootCause(fail.get(0)
                 .getProperty(Exchange.EXCEPTION_CAUGHT,
-                             Exception.class)) instanceof UnknownHostException);
+                             Exception.class)).getClass());
     }
 
     /*
