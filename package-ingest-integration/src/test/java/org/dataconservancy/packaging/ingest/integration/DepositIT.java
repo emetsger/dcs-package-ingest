@@ -42,6 +42,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
@@ -246,6 +247,7 @@ public abstract class DepositIT {
 
     /* Verifies graceful failure when the repository URI is unresolvable */
     @Test
+    @Ignore("Networks that have wildcard resolution will happily return an IP for any DNS name.")
     public void badRepositoryUriTest() throws Exception {
         DepositLocation location =
                 newDepositLocationFor("http://bad.unresolvable.example.org");
