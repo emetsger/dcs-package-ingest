@@ -23,6 +23,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
@@ -33,6 +34,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.http.common.HttpOperationFailedException;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 import org.apache.http.HttpHeaders;
+import org.apache.jena.base.Sys;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.RDFNode;
@@ -141,6 +143,7 @@ public class LdpDepositDriver
          * Headers: -
          */
         from(ROUTE_DEPOSIT_RESOURCES).id("ldp-deposit-all-resources")
+//                .process(exchange -> log.info("{} {}", ROUTE_DEPOSIT_RESOURCES, exchange.getIn().getMessageId()))
                 .to("direct:_setup_for_deposit").doTry().process(m -> {
                     LdpPackageAnalyzer<File> analyzer =
                             m.getIn().getHeader(HEADER_ANALYZER,
@@ -158,6 +161,7 @@ public class LdpDepositDriver
 
         /* Initial setup for a series of subsequent LDP deposits */
         from("direct:_setup_for_deposit")
+//                .process(exchange -> log.info("{} {}", "_setup_for_deposit", exchange.getIn().getMessageId()))
                 .id("ldp-deposit-setup").setHeader(HEADER_ANALYZER,
                                                    expression(e -> analyzerFactory
                                                            .newAnalyzer()))
@@ -166,6 +170,7 @@ public class LdpDepositDriver
                 .setHeader(HEADER_URI_MAP, expression(e -> new HashMap<>()));
 
         from(ROUTE_DEPOSIT_PROVENANCE)
+//                .process(exchange -> log.info("{} {}", ROUTE_DEPOSIT_PROVENANCE, exchange.getIn().getMessageId()))
                 .setBody(expression(e -> provGen.generatePackageProvenance(
                                                                            new File(headerString(e,
                                                                                                  Exchange.FILE_PATH)),
@@ -182,6 +187,7 @@ public class LdpDepositDriver
          * Recurse through the nodes of the tree.
          */
         from("direct:_deposit_hierarchical").id("ldp-deposit-hierarchical")
+//                .process(exchange -> log.info("_deposit_hierarchical {}", exchange.getIn().getMessageId()))
                 .enrich("direct:_deposit_iterate", MERGE_URI_MAP);
 
         /*
@@ -190,8 +196,12 @@ public class LdpDepositDriver
          * Headers: HEADER_LDP_RESOURCES: Collection<LdpResource>
          */
         from("direct:_deposit_iterate").id(ID_DEPOSIT_ITERATE)
-                .split(header(HEADER_LDP_RESOURCES), MERGE_URI_MAP)
-                .stopOnException().enrich("direct:_deposit_ldpResource",
+//                .process(exchange -> log.error("_deposit_iterate Container roots: {}",
+//                        (exchange != null && exchange.getIn() != null && exchange.getIn().getHeader(HEADER_LDP_RESOURCES) != null) ?
+//                                exchange.getIn().getHeader(HEADER_LDP_RESOURCES, Collection.class).stream().map(foo -> ((LdpResource) foo).getURI()).collect(Collectors.joining(", ", "", "")) : "null"))
+//                .process(ex -> log.info("_deposit_iterate body: {}", ex.getIn().getBody()))
+//                .split(header(HEADER_LDP_RESOURCES), MERGE_URI_MAP).stopOnException()
+                .enrich("direct:_deposit_ldpResource",
                                           (existing, deposited) -> {
                                               existing.getIn()
                                                       .setHeader(LOCATION,
@@ -214,6 +224,7 @@ public class LdpDepositDriver
          * verification?
          */
         from("direct:_deposit_ldpResource").id("ldp-deposit-resource")
+//                .process(exchange -> log.info("_deposit_ldpResource {}", exchange.getIn().getMessageId()))
                 .process(e -> {
                     LdpResource resource = e.getIn().getBody(LdpResource.class);
                     e.getIn().setBody(resource.getBody());
@@ -241,6 +252,8 @@ public class LdpDepositDriver
                                             headerString(e, LOCATION));
                     }
 
+                    log.info("_deposit_ldpResource '{}' '{}' '{}'", e.getIn().getMessageId(), e.getIn().getHeader("Slug"), resource.getURI());
+
                 }).to("direct:_http_preserve_body").process(UPDATE_URI_MAP)
                 .process(e -> {
                     LdpResource resource = e.getIn()
@@ -258,6 +271,7 @@ public class LdpDepositDriver
          * original message, preserving its original body
          */
         from("direct:_http_preserve_body").id("ldp-http-preserve-body")
+//                .process(exchange -> log.info("_http_preserve_body {}", exchange.getIn().getMessageId()))
                 .enrich("direct:_do_http_op", ((orig, http) -> {
                     http.getIn().getHeaders().entrySet()
                             .forEach(e -> orig.getIn().getHeaders()
@@ -267,10 +281,17 @@ public class LdpDepositDriver
 
         /* Sanitize headers and perform an HTTP operation */
         from("direct:_do_http_op").id("ldp-http-setup")
+//                .process(exchange -> log.info("_do_http_op {}", exchange.getIn().getMessageId()))
                 .enrich("direct:_http", MERGE_HEADERS)
                 .process(CHECK_HTTP_RESPONSE);
 
         from("direct:_http").id(ID_HTTP_OPERATION)
+                .process(exchange -> log.info("_http '{}' '{}' '{}' '{}' '{}' ",
+                        exchange.getIn().getMessageId(),
+                        exchange.getIn().getHeader("Slug"),
+                        exchange.getIn().getHeader(Exchange.HTTP_METHOD),
+                        exchange.getIn().getHeader(HTTP_URI),
+                        exchange.getIn().getHeader("Content-Disposition")))
                 .removeHeaders("*",
                                HTTP_URI,
                                CONTENT_TYPE,
@@ -290,6 +311,7 @@ public class LdpDepositDriver
          * header, and add triples to it.
          */
         from("direct:_deposit_resource_description")
+                .process(exchange -> log.info("_deposit_resource_description {}", exchange.getIn().getMessageId()))
                 .id("ldp-deposit-resource-description").process(e -> {
                     LdpResource description =
                             e.getIn().getHeader(HEADER_RESOURCE_DESCRIPTION,
@@ -308,6 +330,7 @@ public class LdpDepositDriver
 
         /* Retrieve the current turtle representation of an object */
         from("direct:_retrieveForUpdate").id("ldp-retrieve-for-update")
+                .process(exchange -> log.info("_retrieveForUpdate {}", exchange.getIn().getMessageId()))
                 .setHeader(HttpHeaders.ACCEPT, constant("text/turtle"))
                 .setHeader(Exchange.HTTP_METHOD, constant("GET")).doTry()
                 .to("direct:_do_http_op")

@@ -139,7 +139,7 @@ public abstract class DepositIT {
         DepositLocation location = newDepositLocation();
 
         File created =
-                copyResource("/packages/project1.zip", location.depositDir);
+                copyResource("/packages/MyPackage.tar", location.depositDir);
 
         waitFor(() -> !created.exists());
 

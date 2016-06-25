@@ -48,7 +48,7 @@
       | Loggers
       +-->
 
-    <root level="WARN">
+    <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>
 
