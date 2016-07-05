@@ -17,6 +17,7 @@ package org.dataconservancy.packaging.ingest.camel.impl;
 
 import java.io.File;
 
+import java.io.InputStream;
 import java.net.URLEncoder;
 
 import java.util.Collection;
@@ -298,9 +299,15 @@ public class LdpDepositDriver
                 .to("http4:ldp-host?throwExceptionOnFailure=false")
                 .process(e -> {
                     if (e.getIn() != null) {
-                        log.debug("- {} {}", e.getIn().getHeader(Exchange.HTTP_RESPONSE_CODE),
+                        Integer rc = e.getIn().getHeader(Exchange.HTTP_RESPONSE_CODE, Integer.class);
+                        log.debug("- {} {}", rc,
                                 e.getIn().getHeader(Exchange.HTTP_RESPONSE_TEXT));
+                        if (rc != null && rc >= 400) {
+                            log.debug("- Request body: \n{}", IOUtils.toString((InputStream)e.getIn().getBody()));
+                        }
                     }
+
+
                 });
 
         /*
