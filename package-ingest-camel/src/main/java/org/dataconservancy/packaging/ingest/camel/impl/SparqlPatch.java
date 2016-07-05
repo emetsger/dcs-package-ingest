@@ -26,6 +26,8 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.riot.system.StreamRDFLib;
 import org.apache.jena.riot.writer.NTriplesWriter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.apache.commons.io.Charsets.UTF_8;
 
@@ -33,7 +35,9 @@ import static org.dataconservancy.packaging.ingest.camel.impl.RdfUtil.parseRDFBo
 
 /** Utilities for creating SPARQL/Update for PATCH */
 public class SparqlPatch {
-    
+
+    private static final Logger LOG = LoggerFactory.getLogger(SparqlPatch.class);
+
     public static final String MIME_TYPE = "application/sparql-update";
 
     public static Processor ADD = ((e) -> {
@@ -45,7 +49,7 @@ public class SparqlPatch {
                                          .mapWith(Statement::asTriple));
 
             IOUtils.write("\n}\nWHERE{}".getBytes(UTF_8), body);
-
+            LOG.debug("SPARQL Add: \n{}", IOUtils.toString(body.toByteArray(), "UTF-8"));
             write(e, body);
         }
     });
@@ -81,7 +85,7 @@ public class SparqlPatch {
                                          .mapWith(Statement::asTriple));
 
             IOUtils.write("}\nWHERE{}".getBytes(UTF_8), body);
-
+            LOG.debug("SPARQL Merge: \n{}", IOUtils.toString(body.toByteArray(), "UTF-8"));
             write(a, body);
             return a;
         } catch (Exception e) {
